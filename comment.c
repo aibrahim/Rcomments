@@ -14,9 +14,9 @@ main()
 			if((nextc = getchar()) == '*') {
 				state = FALSE;
 				while(!state) {
-					while((nextc = getchar()) != '*')
+					while((nextc = getchar()) != '*' && nextc != EOF)
 						; // Do nothing, just ignore
-					while((nextc = getchar()) == '*')
+					while((nextc = getchar()) == '*' && nextc != EOF)
 						; // just ignore it too
 					if(nextc == '/')
 						state = TRUE;
