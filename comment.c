@@ -21,9 +21,11 @@ main()
 					if(nextc == '/')
 						state = TRUE;
 				}
-			}
+			} else
+				putchar(nextc);
+
 		} else
-			printf("%c", c);
+			putchar(c);
 	}
 	
 	return 0;
